@@ -1,0 +1,29 @@
+# Derleme çıktıları ve çalıştırılabilir dosyalar
+sakanpota
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+build/
+bin/
+obj/
+
+# IDE ve Editör dosyaları (VS Code, CLion, Xcode vb.)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Loglar ve hata ayıklama dosyaları
+*.log
+*.core
+vgcore.*
+.cache/
+test*
+test/
+bbc_micro

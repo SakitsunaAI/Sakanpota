@@ -1,0 +1,49 @@
+# Rust & Cargo build outputs
+/target/
+/sakanpota
+/bbc_micro
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+build/
+bin/
+obj/
+
+# IDE ve Editör dosyaları (VS Code, CLion, Xcode vb.)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Loglar ve hata ayıklama dosyaları
+*.log
+*.core
+vgcore.*
+.cache/
+/test*
+/test/
+
+# ROM, BIOS ve firmware dosyaları (telifli ikili dosyalar repoda tutulmaz)
+roms/
+*.rom
+*.ROM
+*.bin
+*.BIN
+*.bios
+*.BIOS
+*.int
+*.u500
+*.u501
+*.u502
+*.u610
+*.u611
+mos3.20
+*.a26
+*.mv
+*.zip

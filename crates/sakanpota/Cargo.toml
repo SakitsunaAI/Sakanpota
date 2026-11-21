@@ -1,0 +1,10 @@
+[package]
+name = "sakanpota"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+emu-core = { path = "../emu-core" }
+machines = { path = "../machines" }
+sdl2 = "0.37.0"

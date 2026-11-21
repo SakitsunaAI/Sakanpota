@@ -1,0 +1,8 @@
+[package]
+name = "peripherals"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+emu-core = { path = "../emu-core" }

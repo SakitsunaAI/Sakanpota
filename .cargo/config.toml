@@ -1,0 +1,10 @@
+[env]
+LIBRARY_PATH = "/opt/local/lib"
+CPATH = "/opt/local/include/SDL2"
+PKG_CONFIG_PATH = "/opt/local/lib/pkgconfig"
+
+[target.x86_64-apple-darwin]
+rustflags = ["-L", "/opt/local/lib"]
+
+[target.aarch64-apple-darwin]
+rustflags = ["-L", "/opt/local/lib"]

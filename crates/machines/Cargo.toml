@@ -1,0 +1,10 @@
+[package]
+name = "machines"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+emu-core = { path = "../emu-core" }
+cpu-cores = { path = "../cpu-cores" }
+peripherals = { path = "../peripherals" }

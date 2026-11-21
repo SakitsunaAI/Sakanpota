@@ -1,0 +1,33 @@
+# GitHub Linguist dil istatistiklerini düzeltme ve sadece Rust kodunu öne çıkarma
+
+# Disk imajları, ROM ve ikili (binary) dosyaları dil hesabından hariç tut
+discs/** linguist-vendored
+roms/** linguist-vendored
+*.bin linguist-generated=true
+*.rom linguist-generated=true
+*.ssd linguist-generated=true
+*.dsd linguist-generated=true
+*.d64 linguist-generated=true
+*.tap linguist-generated=true
+*.tzx linguist-generated=true
+*.dsk linguist-generated=true
+*.img linguist-generated=true
+
+# Olası C / C++ kalıntılarını veya harici başlıkları istatistikten çıkar
+*.c linguist-vendored
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.cxx linguist-vendored
+*.h linguist-vendored
+*.hpp linguist-vendored
+
+# Rust kaynak kodlarını açıkça birincil dil olarak işaretle
+crates/**/*.rs linguist-detectable=true
+*.rs linguist-detectable=true
+
+# Satır sonlarını tüm işletim sistemlerinde (macOS / Linux / Windows) standartlaştır
+* text=auto eol=lf
+*.rs text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+

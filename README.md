@@ -38,18 +38,6 @@ The project is organized as a modular Cargo workspace:
 | `pocket` | **Sony PocketStation** | ARM7TDMI (ARM) | 32x32 LCD controller, 16KB PK201 kernel ROM (`pocketstation.bin`), BCD RTC, timers & interrupts |
 
 ---
-
-## Purged Systems (Un-Emulatable / Mockup Legacy Devices Removed)
-
-During the Phase 1 LLE audit, systems that relied on C++ HLE mockups, fantasy VMs without a real hardware ISA, closed proprietary SoCs without obtainable firmware, or unbundled/missing system disks/controller ROMs were completely removed from the repository:
-
-- **Fantasy / Non-Hardware VMs**: `PICO-8` (proprietary Lua 5.2 fantasy VM with hardcoded C++ game clones and synthetic cart stubs).
-- **Closed Proprietary Hardware / Encrypted Firmware**: `Flipper Zero` (STM32WB55RG dual-core + BLE/Sub-GHz/NFC/RFID stack with zero firmware ROM), `Dreamware Enterprises VM2` & `8BitMods VMU Pro` (closed commercial STM32/ESP32-S3 hardware), `Apple Newton MessagePad` (requires undocumented Runt/Voyager ASICs and tablet ADC/calibration EEPROMs).
-- **Orphan Mobile / Cellular Mockups**: `Motorola RAZR2 V9`, `Nokia 3310`, `Luxury Mobile`, `Symbian S60`, `Cybiko` (closed proprietary baseband/application SoCs with fake `pc += 4` loops and corrupted/absent firmware).
-- **Unbundled / Missing Required Controller ROMs or Boot Disks**: `Apple Lisa 2/5` (missing COPS421 MCU ROM & ProFile/Twiggy Lisa OS disks), `Apple Macintosh 128K` (no Macintosh System 1.0/Finder 400K GCR boot disk), `Sinclair QL` (missing Intel 8049 IPC mask ROM), `Atari Lynx` (missing `.lnx` game cartridge ROMs), `Magnavox Odyssey²` (no cartridge ROMs in repository).
-
----
-
 ## Building, Running & Testing
 
 ### Prerequisites
